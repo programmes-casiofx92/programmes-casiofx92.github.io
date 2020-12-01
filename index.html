@@ -71,13 +71,16 @@ tennis automatique, dessin en noir et blanc, puissance 4…">
     .resultats{
         width: 300px;
         display: none;
+        background: white;
+        position: static;
+        height: auto;
     }
 </style>
 </head>
 <body>
     <span style="width:100%;"><h3 class="haut">Programmes sur la calculatrice Casio fx 92+</h3>
-    <input class="haut" type="text" id="recherche" placeholder="Rechercher…"></span>
-    <div class="resultats">rth</div>
+    <input class="haut" type="text" id="recherche" placeholder="Rechercher…" value=""></span>
+    <div class="resultats"></div>
     <nav>
         <ul>
             <li><a class="lm a" href="/">Tous les algorithmes</a></li>
@@ -90,8 +93,8 @@ tennis automatique, dessin en noir et blanc, puissance 4…">
     <script>
         const resultats = document.querySelector('.resultats');
         const recherche = document.getElementById('recherche');
-        recherche.addEventListener('onkeydown', function(){
-            resultats.style.display = "block";
+        document.getElementById('recherche').addEventListener('keypress', function() {
+            document.getElementsByClassName("resultats").style.display = "block";
         })
     </script>
 </body>
