@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="keywords" content="casio,fx,92,fx,92+,orlando,jakubec">
+<meta name="description" content="Salut ! Sur ce site, vous trouverez les programmes que j'ai faits sur la calculette Casio fx 92+ :
+tennis automatique, dessin en noir et blanc, puissance 4…">
+<meta name="robots" content="all">
+<title>Programmes à la calculatrice Casio</title>
+<meta charset="UTF-8">
+<style>
+    *{
+        font-family: Arial, Helvetica, sans-serif;
+        box-sizing: border-box;
+    }
+    nav{
+    width: 100%;
+    margin: 0px auto 40px auto;
+    background-color: black;
+    position: sticky;
+    top: 0px;
+    
+    }
+    nav li:hover{
+        background-color: rgb(240, 241, 233);
+    }
+
+    nav ul{
+        list-style-type: none;
+        width: 100%;
+        margin: none;
+        position: relative;
+        left: 0;
+        right: 0;
+    }
+    nav li{
+        display: inline-block;
+        width: 18%;
+        text-align: center;
+        background-color: rgb(0, 0, 0);
+        transition-property: background-color;
+        transition-duration: .5s;
+    }
+    li > .lm{
+        display: block;
+        text-decoration: none;
+        color: rgb(240, 241, 233);
+        padding: 10px 0px;
+        transition: .5s;
+    }
+    .lm:hover{
+        color: black;
+    }
+    body{
+        background-color: rgb(240, 241, 233);
+    }
+    .haut{
+        display: inline;
+    }
+    #recherche{
+        width: 50%;
+        position: relative;
+        right: -17%;
+        border: none;
+        border-bottom: 1px solid #CCC;
+        padding: 10px;
+        background-color: rgb(240, 241, 233);
+    }
+    #recherche:focus{
+        outline: none;
+    }
+    .resultats{
+        width: 300px;
+        display: none;
+    }
+</style>
+</head>
+<body>
+    <span style="width:100%;"><h3 class="haut">Programmes sur la calculatrice Casio fx 92+</h3>
+    <input class="haut" type="text" id="recherche" placeholder="Rechercher…" value=""></span>
+    <div class="resultats">rth</div>
+    <nav>
+        <ul>
+            <li><a class="lm a" href="/">Tous les algorithmes</a></li>
+            <li><a class="lm" href="/jeux">Jeux</a></li>
+            <li><a class="lm" href="/dessins">Dessins</a></li>
+            <li><a class="lm" href="/autres algorithmes">Autres algorithmes</a></li>
+            <li><a class="lm b" href="/debutants">Débutants</a></li>
+        </ul>
+    </nav>
+    <script>
+        const resultats = document.querySelector('.resultats');
+        const recherche = document.getElementById('recherche');
+        if(recherche.value !== null) {
+            document.getElementsByClassName('resultats').style.display = "block";
+        }
+    </script>
+</body>
+</html>
