@@ -76,3 +76,19 @@ body{
     color: black !important;
 }
 
+a{
+    color: black;
+}
+.remerciements{
+    background-color: rgb(22, 22, 22);
+    color: white;
+    width: 102%;
+    height: 300px;
+    position: relative;
+    left: -0.67%;
+    bottom: -1.67%;
+    margin-bottom: 0%;
+}
+#mail{
+    color: white;
+}
