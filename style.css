@@ -85,10 +85,14 @@ a{
     width: 102%;
     height: 300px;
     position: relative;
-    left: -0.67%;
-    bottom: -1.67%;
+    left: 0;
+    bottom: 0;
     margin-bottom: 0%;
 }
 #mail{
     color: white;
+}
+html, body{
+    margin: 0;
+    padding: 0;
 }
