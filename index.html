@@ -7,88 +7,21 @@ tennis automatique, dessin en noir et blanc, puissance 4…">
 <meta name="robots" content="all">
 <title>Programmes à la calculatrice Casio</title>
 <meta charset="UTF-8">
-<style>
-    *{
-        font-family: Arial, Helvetica, sans-serif;
-        box-sizing: border-box;
-    }
-    nav{
-    width: 100%;
-    margin: 0px auto 40px auto;
-    background-color: black;
+<link rel="stylesheet" href="style.css">
 
-    position: sticky;
-    top: 0px;
-    
-    }
-    nav li:hover{
-        background-color: rgb(240, 241, 233);
-    }
-
-    nav ul{
-        list-style-type: none;
-        width: 100%;
-        margin: none;
-        position: relative;
-        left: 0;
-        right: 0;
-    }
-    nav li{
-        display: inline-block;
-        width: 18%;
-        text-align: center;
-        background-color: rgb(0, 0, 0);
-        transition-property: background-color;
-        transition-duration: .5s;
-    }
-    li > .lm{
-        display: block;
-        text-decoration: none;
-        color: rgb(240, 241, 233);
-        padding: 7px 0px;
-        transition: .5s;
-        border-bottom: 3px solid black;
-    border-top: 3px solid black;
-    }
-    .lm:hover{
-        color: black;
-    }
-    body{
-        background-color: rgb(240, 241, 233);
-    }
-    .haut{
-        display: inline;
-    }
-    #recherche{
-        width: 50%;
-        position: relative;
-        right: -17%;
-        border: none;
-        border-bottom: 1px solid #CCC;
-        padding: 10px;
-        background-color: rgb(240, 241, 233);
-    }
-    #recherche:focus{
-        outline: none;
-    }
-    .resultats{
-        width: 300px;
-        display: none;
-        background: white;
-        position: static;
-        height: auto;
-    }
-    .lia{
-        background-color: rgb(240, 241, 233);
-    }
-    .a{
-        color: black !important;
-    }
-</style>
 <style>
     .gauche{
         position: relative;
         left: 30px;
+        align-items: center;
+    }
+    .milieu{
+        position: relative;
+        left: 30px;
+        align-items: center;
+    }
+    .main{
+        align-items: center;
     }
 </style>
 </head>
@@ -105,7 +38,7 @@ tennis automatique, dessin en noir et blanc, puissance 4…">
             <li><a class="lm" href="/debutants">Pour les débutants</a></li>
         </ul>
     </nav>
-    <div><div class="gauche">
+    <span><div class="gauche main">
        <strong><u>Illusion du carré impossible</u></strong> 
 <div style="font-family: menlo;">
 Aller à x=25; y=9; <br>
@@ -144,8 +77,48 @@ Répéter 2 fois <br>
 &nbsp;Stylo relevé<br>
 &nbsp;Avancer de 50 px <br>
 &nbsp;Stylo écrit <br>
-⤴<br></div></div>
+⤴<br></span>
+<div class="milieu main">
+    <strong><u>Illusion de Müller-Lier</u></strong>
+    <div style="font-family: menlo;">
+Aller à x=-25; y=-15; <br>
+Stylo écrit <br>
+S'orienter à 90 degrés <br>
+Répéter 2 fois <br>
+&nbsp;Avancer de 30 px <br>
+&nbsp;Tourner de 135 degrés<br>
+&nbsp;Avancer de 10 px <br>
+&nbsp;Tourner de 180 degrés<br>
+&nbsp;Avancer de 10 px <br>
+&nbsp;Tourner de 270 degrés<br>
+&nbsp;Avancer de 10 px <br>
+&nbsp;Tourner de 180 degrés<br>
+&nbsp;Avancer de 10 px <br>
+&nbsp;Tourner de 135 degrés<br>
+⤴<br>
+Stylo relevé 
+Tourner de 270 degrés<br>
+Avancer de 50 px <br>
+Stylo écrit <br>
+Tourner de 90 degrés<br>
+Répéter 2 fois <br>
+&nbsp;Avancer de 30 px <br>
+&nbsp;Tourner de 45 degrés<br>
+&nbsp;Avancer de 10 px <br>
+&nbsp;Tourner de 180 degrés<br>
+&nbsp;Avancer de 10 px <br>
+&nbsp;Tourner de 90 degrés<br>
+&nbsp;Avancer de 10 px <br>
+&nbsp;Tourner de 180 degrés<br>
+&nbsp;Avancer de 10 px <br>
+&nbsp;Tourner de 45 degrés<br>
+⤴<br>
+Stylo relevé <br>
+Avancer de 100 px <br>
     </div>
+
+</div></div>
+</span>
     <script>
         const resultats = document.querySelector('.resultats');
         const recherche = document.getElementById('recherche');
