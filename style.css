@@ -96,3 +96,16 @@ html, body{
     margin: 0;
     padding: 0;
 }
+.alert{
+    position: relative;
+    left: 30px;
+    background-color: rgb(255, 66, 66);
+    padding: 10px;
+    width: 550px;
+    top: -15px;
+    border-radius: 3px;
+    
+}
+#fermerAlerte{
+    cursor: pointer;
+}
