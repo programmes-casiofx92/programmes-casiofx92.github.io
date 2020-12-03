@@ -109,3 +109,21 @@ html, body{
 #fermerAlerte{
     cursor: pointer;
 }
+.main {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+
+.milieu {
+    left: 60px;
+}
+
+.droite {
+    left: 90px;
+}
+
+.principale {
+    position: relative;
+    left: 30px;
+}
