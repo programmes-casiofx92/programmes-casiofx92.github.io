@@ -30,7 +30,7 @@ tennis automatique, dessin en noir et blanc, puissance 4…">
         </ul>
     </nav>
     <span class="alert">Attention : ces algorithmes ne fonctionnent que sur la Casio fx 92+&nbsp;&nbsp;<span
-            id="fermerAlerte" title="Fermer">x</span></span>
+            id="fermerAlerte" title="Fermer"><strong>x</strong></span></span>
     <div class="principale">
         <div class="gauche main">
             <strong><u>Illusion du carré impossible</u></strong><br>
@@ -115,7 +115,7 @@ tennis automatique, dessin en noir et blanc, puissance 4…">
             </div>
 
         </div>
-        <div class="droite main">
+        <div class="milieudroite main">
             <strong><u>Triangle de penrose</u></strong><br>
             <img src="triangle-penrose.png" width="200px" style="margin-top: 10px;margin-bottom: 10px;"
                 alt="Désolé, cette image est manquante.">
@@ -141,6 +141,35 @@ tennis automatique, dessin en noir et blanc, puissance 4…">
                 Avancer de 60 px <br>
                 Stylo écrit <br>
                 ⤴ </div>
+        </div>
+        <div class="droite main">
+            <strong><u>Dessin aléatoire (et souvent moche)</u></strong><br>
+            <video src="dessin aleatoire.mp4" width="300px" controls></video><br>
+            <div style="font-family: monaco, menlo;">
+                Stylo écrit<br>
+                Répéter jusqu'à 1=0 (en gros indéfiniment)<br>
+                &nbsp;Avancer de <a href="debutants#ranint">RanInt#(1;7)</a><br>
+                &nbsp;Tourner de RanInt#(1;360) degrés<br>
+                &nbsp;Si x <a href="debutants#plusgranque">&#8250;</a> 90 Alors<br>
+                &nbsp;&nbsp;Aller à x = RanInt#(-90;90)<br>&nbsp;&nbsp;y = RanInt#(-20;20)<br>
+                &nbsp;Fin<br>
+                &nbsp;Si x <a href="debutants#pluspetitque">&#8249;</a> 90 Alors<br>
+                &nbsp;&nbsp;Aller à x = RanInt#(-90;90)<br>&nbsp;&nbsp;y = RanInt#(-20;20)<br>
+                &nbsp;Fin<br>
+                &nbsp;Si y &#8250; 20 Alors<br>
+                &nbsp;&nbsp;Aller à x = RanInt#(-90;90)<br>&nbsp;&nbsp;y = RanInt#(-20;20)<br>
+                &nbsp;Fin<br>
+                &nbsp;Si y &#8249; -20 Alors<br>
+                &nbsp;&nbsp;Aller à x = RanInt#(-90;90)<br>&nbsp;&nbsp;y = RanInt#(-20;20)<br>
+                &nbsp;Mettre var A = RanInt#(0;1)<br>
+                &nbsp;Si A = 0 ALors<br>
+                &nbsp;&nbsp;Stylo écrit<br>
+                &nbsp;Fin<br>
+                &nbsp;Si A = 1 ALors<br>
+                &nbsp;&nbsp;Stylo relevé<br>
+                &nbsp;Fin<br>
+                ⤴
+            </div>
         </div>
     </div>
     <div class="remerciements">
