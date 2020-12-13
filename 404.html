@@ -1,13 +1,51 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
+    <title>Programmes à la calculatrice Casio</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erreur 404</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <p>Désolé, cette page n'existe pas.</p>
+    <span style="width:100%;">
+        <h3 class="haut">Programmes pour la calculatrice Casio fx 92+</h3>
+        <input class="haut" type="text" id="recherche" placeholder="Rechercher…" value="">
+    </span>
+    <div class="resultats"></div>
+    <nav>
+        <ul>
+            <li class="lia"><a class="lm a" href="/">Tous les algorithmes</a></li>
+            <li><a class="lm" href="jeux">Jeux</a></li>
+            <li><a class="lm" href="dessins">Dessins</a></li>
+            <li><a class="lm" href="autres algorithmes">Autres algorithmes</a></li>
+            <li><a class="lm" href="hors sujet">Hors sujet</a></li>
+            <li><a class="lm" href="debutants">Aide pour les débutants</a></li>
+        </ul>
+    </nav>
+
+    <div style="text-align: center;">
+        Désolé, cette page n'existe pas.<br><a href="/">Retour à l'accueil</a>
+    </div>
+    <div class="remerciements">
+        <p>&nbsp;Une <u>question</u> ? Une <u>suggestion</u> ? Contactez moi :
+            <a id="mail" href="mailto:orlando.casiofx92@gmx.fr">orlando.casiofx92@gmx.fr</a></p>
+        <p>&nbsp;Si vous trouvez dans ces algorithmes des erreurs, n'hésitez pas à me le signaler.</p>
+        <p>&nbsp;Algorithmes : Orlando Jakubec</p>
+        <p>&nbsp;Développement web : Paul Raguenet de Saint Albin</p>
+    </div>
+    <script>
+        const resultats = document.querySelector('.resultats');
+        const recherche = document.getElementById('recherche');
+        recherche.addEventListener('keypress', function () {
+            resultats.style.display = "block";
+        })
+        document.addEventListener('click', function () {
+            resultats.style.display = "none";
+        })
+    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
