@@ -113,22 +113,11 @@ html, body{
     display: inline-block;
     vertical-align: top;
     position: relative;
-}
-
-.milieu {
-    left: 60px;
-}
-
-.milieudroite {
-    left: 90px;
-}
-.droite{
-    left: 120px;
-}
-.principale {
-    position: relative;
+    width: 21%;
     margin-left: 30px;
 }
+
+
 .lienalgo{
     color: rgb(62, 130, 255);
     text-decoration: none;
@@ -153,4 +142,7 @@ html, body{
 }
 .lienalgo:hover{
     color: rgb(255, 255, 255);
+}
+.img{
+    max-width: 100%;
 }
