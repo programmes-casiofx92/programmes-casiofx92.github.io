@@ -104,7 +104,7 @@ html, body{
     width: 550px;
     top: -15px;
     border-radius: 3px;
-    
+
 }
 #fermerAlerte{
     cursor: pointer;
@@ -145,4 +145,7 @@ html, body{
 }
 .img{
     max-width: 100%;
+}
+.algo{
+  font-family: monaco, menlo; width: 100%;
 }
