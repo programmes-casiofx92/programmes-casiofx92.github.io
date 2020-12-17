@@ -31,7 +31,7 @@ nav li{
     background-color: rgb(0, 0, 0);
     transition-property: background-color;
     transition-duration: .5s;
-    margin-bottom: 40px;
+    margin-bottom: 38px;
 }
 li > .lm{
     display: block;
@@ -40,14 +40,15 @@ li > .lm{
     padding: 7px 0px;
     transition: .5s;
     border-bottom: 3px solid black;
-border-top: 3px solid black;
 }
 .lm:hover{
     color: black;
 }
 
 .haut{
-    display: inline;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0%;
 }
 
 .resultats{
