@@ -32,6 +32,7 @@ nav li{
     transition-property: background-color;
     transition-duration: .5s;
     margin-bottom: 38px;
+	position:relative;
 }
 li > .lm{
     display: block;
@@ -47,7 +48,7 @@ li > .lm{
 
 .haut{
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     margin: 0%;
 }
 
@@ -58,12 +59,7 @@ li > .lm{
     position: static;
     height: auto;
 }
-.lia{
-    background-color: rgb(255, 255, 255);
-}
-.a{
-    color: black !important;
-}
+
 
 a{
     color: black;
@@ -72,7 +68,7 @@ a{
     background-color: rgb(22, 22, 22);
     color: white;
     width: 100%;
-    height: 300px;
+    height: 200px;
     position: relative;
     left: 0;
     bottom: 0px;
@@ -137,4 +133,32 @@ html, body{
 }
 .algo{
   font-family: monaco, menlo; width: 100%;
+}
+.sous{
+    display: none;
+    background-color: rgb(0, 0, 0);
+    transition: .3s;
+	position: absolute;
+	width:100%;
+	z-index:10000;
+	border:none;
+}
+.deroulant:hover .sous{
+    display: block;
+}
+.lisous{
+    float: none;
+    width: 100%;
+    text-align: center;
+    width: 100%;
+    border-bottom: none !important;
+}
+.deroulant:hover .dessin,
+.deroulant:hover .jeux{
+	color: black !important;
+}
+.sous > li{
+	width: 100%;
+    margin-bottom: 0;
+    
 }
