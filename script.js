@@ -26,3 +26,6 @@ document.querySelector('.souse').addEventListener('mouseover', function () {
 document.querySelector('.souse').addEventListener('mouseout', function () {
     document.querySelector('.flechebl').innerHTML = "&#9660;";
 })
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+    window.location.replace('https://programmes-casiofx92.github.io/mobile');
+}
