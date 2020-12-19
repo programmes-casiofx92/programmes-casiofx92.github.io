@@ -34,7 +34,7 @@
 
         ul {
             width: 100%;
-            position: absolute;
+            position: relative;
         }
 
         html,
@@ -44,4 +44,9 @@
         }
         .menu{
             display: none;
+        }
+        #alerte{
+            background-color: rgb(212, 78, 78);
+            padding: 10px;
+            
         }
