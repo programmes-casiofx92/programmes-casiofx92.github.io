@@ -589,20 +589,12 @@ Fin<br>
         <p>&nbsp;Développement web : Paul Raguenet de Saint Albin</p>
     </div>
     <script>
-        const resultats = document.querySelector('.resultats');
-        const recherche = document.getElementById('recherche');
-        recherche.addEventListener('keypress', function ()
-        {
-            resultats.style.display = "block";
-        })
-        document.addEventListener('click', function ()
-        {
-            resultats.style.display = "none";
-        })
+        
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent))
         {
-            window.location.replace('https://programmes-casiofx92.github.io/mobile');
-        }
+            window.location.replace('mobile');
+        };
+        if (screen.width < 1004) { window.location.replace('mobile'); };
     </script>
     <script src="script.js"></script>
 </body>

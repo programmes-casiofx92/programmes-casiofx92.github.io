@@ -52,11 +52,11 @@ tennis automatique, dessin en noir et blanc, puissance 4…">
         <p>&nbsp;Développement web : Paul Raguenet de Saint Albin</p>
     </div>
     <script>
-        const resultats = document.querySelector('.resultats');
-        const recherche = document.getElementById('recherche');
-        if (recherche.value !== null) {
-            document.getElementsByClassName('resultats').style.display = "block";
-        }
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent))
+            {
+                window.location.replace('mobile/dessin binaire');
+            };
+            if (screen.width < 1004) { window.location.replace('mobile/dessin binaire'); };
     </script>
     <script src="script.js"></script>
 </body>
