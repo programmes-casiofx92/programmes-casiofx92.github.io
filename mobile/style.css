@@ -15,7 +15,7 @@
             padding: 10px;
             background-color: black;
             color: white;
-            transition: .5s;
+            transition: .15s;
             display: block;
             text-decoration: none;
         }
@@ -55,7 +55,13 @@
         }
        
         .img{
-            width: 100%;
+            width: 95%;
+            max-width: 570px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0;
+            margin-bottom: 0;
         }
         .algo{
             margin: auto;
