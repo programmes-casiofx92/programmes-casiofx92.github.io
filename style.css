@@ -132,7 +132,7 @@ html, body{
     max-width: 100%;
 }
 .algo{
-  font-family: monaco, menlo; width: 100%;
+  font-family: monaco, menlo, monospace; width: 100%;
 }
 .sous{
     display: none;
