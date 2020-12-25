@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canevas</title>
+  <style>
+    #canvas{
+      border: 2px solid;
+      
+    }
+    body{
+      margin: 0;
+    }
+    #lien{
+      text-decoration: none;
+      font-family: Arial, Helvetica, sans-serif;
+      color: black;
+      font-size: large;
+      padding: 10px;
+      background-color: rgb(89, 89, 255);
+      border-radius: 5px;
+      top: 10px;
+      position: relative;
+      transition: .3s;
+      margin-left: 5px;
+    }
+    #lien:focus{
+      outline: none;
+    }
+    #lien:hover{
+      background-color: rgb(22, 22, 145);
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  
+  <canvas id="canvas" width="750" height="300" onmousemove="dessin()"></canvas><br>
+  <input type="color" name="" id="color">
+  <input type="range" min="2" max="50" value="30" id="taille"
+   ><span id="nombre">30</span><br>
+   <a href="" id="lien" download="Image magnifique">Télécharger l'image</a>
+  <script>
+    canvas = document.getElementById('canvas');
+    ctx = canvas.getContext('2d');
+    
+    var pressed = false;
+    canvas.addEventListener('mousedown', function(){
+      pressed = true;
+    })
+    canvas.addEventListener('mouseup', function(){
+      pressed = false;
+    })
+    document.getElementById('taille').oninput = function(){
+      document.getElementById('nombre').innerHTML = document.getElementById('taille').value;
+    }
+    function dessin(){
+      if(pressed == true){
+        ctx.fillStyle = document.getElementById('color').value;
+        var x = event.clientX;
+        var y = event.clientY;
+        var taille = document.getElementById('taille').value;
+        ctx.beginPath();
+        ctx.arc(x, y, taille, Math.PI * 2, false);
+        ctx.closePath();
+        ctx.fill();
+      }
+    }
+    function lien(){
+      document.getElementById('lien').href = canvas.toDataURL();
+    }
+    setInterval(lien, 1);
+  </script>
+</body>
+</html>
