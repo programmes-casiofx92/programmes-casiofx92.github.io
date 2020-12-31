@@ -428,8 +428,9 @@ tennis automatique, dessin en noir et blanc, puissance 4…">
         </div>
         <div class="main">
             <strong><u>Dessin aléatoire (et souvent moche)</u></strong><br>
-            <video src="Images/dessin aleatoire leger.mp4" class="img" poster="Images/dessin aleatoire poster.jpg"
-                muted="" controls></video><br>
+            <div class="resp-container">
+  <iframe src="https://www.youtube.com/embed/yHUnyQ2RIXk" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%;border: 0;" width="100%" height="56.25%" frameborder="0"></iframe>
+</div><br>
             <u>Niveau : facile</u><br>
             <div class="algo">
                 Stylo écrit<br>
@@ -541,9 +542,9 @@ Répéter 1000 fois <br>
 &nbsp;&nbsp;Mettre var E à 0<br>
 &nbsp;&nbsp;Mettre var C à RanInt#(7;10)<br>
 &nbsp;&nbsp;Mettre var D à 7<br>
-&nbsp;⤴ <br>
+&nbsp;Fin <br>
 &nbsp;Si -23&lt;y&lt;-10 Alors <br>
-&nbsp;&nbsp;Si -50>x>-75 Alors <br>
+&nbsp;&nbsp;Si -50&gt;x&gt;-75 Alors <br>
 &nbsp;&nbsp;&nbsp;S'orienter à RanInt#(30;65) degrés <br>
 &nbsp;&nbsp;&nbsp;Mettre var E à 0<br>
 &nbsp;&nbsp;&nbsp;Mettre var F à 1<br>
@@ -567,16 +568,15 @@ Répéter 1000 fois <br>
 &nbsp;&nbsp;Mettre var B à B+1<br>
 &nbsp;Fin<br>
 ⤴ <br>
-Si A>B Alors <br>
+Si A&gt;B Alors <br>
 &nbsp;Aller à x=-63; y=-10; <br>
 Sinon<br>
-&nbsp;Si A>B Alors <br>
+&nbsp;Si A&lt;B Alors <br>
 &nbsp;&nbsp;Aller à x=63; y=-10; <br>
 &nbsp;Sinon<br>
 &nbsp;&nbsp;Aller à x=0; y=0; <br>
 &nbsp;Fin<br>
 Fin<br>
-
             </div>
         </div>
     </div>
