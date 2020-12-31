@@ -14,9 +14,13 @@
             display: block;
             color: black;
             position: relative;
+            font-family: Arial, Helvetica, sans-serif;
         }
         #play:active{
             color: black;
+        }
+        #play:focus{
+            outline: none;
         }
         #play::after{
             content: "Clique ici pour entendre un bruit inadéquat";
@@ -26,12 +30,12 @@
             background-color: black;
             position: absolute;
             color: white;
-            width: 300px;
+            width: 324px;
             text-align: center;
             border-radius: 5px;
             transition: .2s ease-in-out;
             display: block;
-            margin-right: 15O;
+            
         }
         #play:hover::after{
             opacity: 1;
