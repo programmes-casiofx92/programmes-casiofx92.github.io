@@ -132,7 +132,8 @@ html, body{
     max-width: 100%;
 }
 .algo{
-  font-family: monaco, menlo; width: 100%;
+    font-family: 'Fira Mono', monospace;
+    
 }
 .sous{
     display: none;
@@ -174,4 +175,10 @@ html, body{
   width: 100%; 
   height: 100%; 
   border: 0; 
+}
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+@media screen and (max-width: 1280px){
+    .algo{
+    font-size: 90%;
+}
 }
