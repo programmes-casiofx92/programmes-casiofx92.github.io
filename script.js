@@ -1,7 +1,10 @@
-const fermerAlerte = document.getElementById('fermerAlerte');
-fermerAlerte.addEventListener('click', function () {
-    document.querySelector('.alert').style.display = "none";
-})
+if (window.location.href.indexOf("debutants") < -1 && window.location.href.indexOf("hors sujet") < -1)
+{ 
+    document.getElementById('fermerAlerte').addEventListener('click', function ()
+    {
+        document.querySelector('.alert').style.display = "none";
+    })
+}
 document.querySelector('.jeux').addEventListener('mouseover', function () {
     document.querySelector('.flecheje').innerHTML = "△";
 })
