@@ -100,6 +100,7 @@ html, body{
     position: relative;
     width: 22%;
     margin-left: 30px;
+    transition: .3s;
 }
 
 
@@ -132,8 +133,8 @@ html, body{
     max-width: 100%;
 }
 .algo{
-    font-family: 'Fira Mono', monospace;
-    
+    font-family: 'Roboto Mono', monospace;
+    transition: .3s;
 }
 .sous{
     display: none;
@@ -176,9 +177,25 @@ html, body{
   height: 100%; 
   border: 0; 
 }
-@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&display=swap');
 @media screen and (max-width: 1280px){
     .algo{
     font-size: 90%;
+}
+}
+@media screen and (max-width: 1111px){
+    .main{
+        width: 30%;
+    }
+    .algo{
+    font-size: 100%;
+}
+}
+@media screen and (max-width: 990px){
+    .main{
+        width: 46%;
+    }
+    .algo{
+    font-size: 100%;
 }
 }
