@@ -1,10 +1,4 @@
-if (window.location.href.indexOf("debutants") < -1 && window.location.href.indexOf("hors sujet") < -1)
-{ 
-    document.getElementById('fermerAlerte').addEventListener('click', function ()
-    {
-        document.querySelector('.alert').style.display = "none";
-    })
-}
+
 document.querySelector('.jeux').addEventListener('mouseover', function () {
     document.querySelector('.flecheje').innerHTML = "△";
 })
@@ -28,4 +22,9 @@ document.querySelector('.souse').addEventListener('mouseover', function () {
 })
 document.querySelector('.souse').addEventListener('mouseout', function () {
     document.querySelector('.flechebl').innerHTML = "▽";
+})
+document.getElementById('fermerAlerte').addEventListener('click', function ()
+    {
+        document.querySelector('.alert').style.display = "none";
+
 })
