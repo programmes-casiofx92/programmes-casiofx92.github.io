@@ -199,3 +199,7 @@ html, body{
     font-size: 100%;
 }
 }
+.jeux, .dessin{
+    border: none;
+    height: 35px;
+}
