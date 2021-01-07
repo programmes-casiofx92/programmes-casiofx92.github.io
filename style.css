@@ -38,9 +38,9 @@ li > .lm{
     display: block;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    padding: 7px 0px;
+    padding: 10px 0px;
     transition: .5s;
-    border-bottom: 3px solid black;
+    height: 40px;
 }
 .lm:hover{
     color: black;
@@ -86,10 +86,9 @@ html, body{
     left: 30px;
     background-color: rgb(255, 66, 66);
     padding: 10px;
-    width: 550px;
     top: -15px;
     border-radius: 3px;
-
+    display: inline-block;
 }
 #fermerAlerte{
     cursor: pointer;
@@ -201,5 +200,5 @@ html, body{
 }
 .jeux, .dessin{
     border: none;
-    height: 35px;
+    height: 40px;
 }
