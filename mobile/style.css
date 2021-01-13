@@ -95,7 +95,7 @@
   height: 100%; 
   border: 0; 
 }
-@media screen and (min-width: 1192px){
+@media screen and (min-width: 1042px){
     .main{
         width: 48%;
         display: inline-block;
