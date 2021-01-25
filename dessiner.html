@@ -57,6 +57,7 @@
       document.getElementById('nombre').innerHTML = document.getElementById('taille').value;
     }
     function dessin(){
+      
       if(pressed == true){
         ctx.fillStyle = document.getElementById('color').value;
         var x = event.clientX;
@@ -72,6 +73,7 @@
       document.getElementById('lien').href = canvas.toDataURL();
     }
     setInterval(lien, 1);
+    setInterval(dessin, 1);
   </script>
 </body>
 </html>
