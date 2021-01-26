@@ -1,0 +1,10 @@
+body{
+    background-color: aliceblue;
+}
+button{
+    background: rgb(80, 80, 129);
+    color: wheat;
+}
+button:hover{
+    background: rgb(13, 13, 78);
+}
