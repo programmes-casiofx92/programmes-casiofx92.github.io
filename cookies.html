@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookies</title>
+    <link rel="stylesheet" href="blanc.css" id="style">
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #texte {
+            width: 500px;
+            height: 30px;
+            border: none;
+            border-bottom: 1px #CCC solid;
+            font-size: 28px;
+        }
+
+        #texte:focus {
+            outline: none;
+        }
+
+        .affichage {
+            font-size: 70px;
+        }
+
+        button {
+            padding: 20px;
+            border-radius: 10px;
+            border: 3px solid rgb(70, 70, 70);
+
+            cursor: pointer;
+            transition: .3s;
+            margin-left: 10px;
+            font-size: larger;
+        }
+    </style>
+</head>
+
+<body>
+    <input type="text" id="texte" placeholder="Entrez du texte ici">
+    <button id="noir">Noir</button><button id="blanc">Blanc</button><button id="fr">Français</button>
+    <button id="en">English</button><br>
+    <div id="lf">Bonjour, je m'appelle Paul.</div>
+    <script>
+        var nombre;
+        var theme;
+        theme = localStorage.getItem('theme');
+        var langue = localStorage.getItem('langue');
+        if (theme == 'noir')
+        {
+            o('#style').href = "noir.css"
+        }
+        else
+        {
+            o('#style').href = "blanc.css"
+        }
+        if (langue == 'fr')
+        {
+            localStorage.setItem('langue', 'fr');
+            document.querySelector('#lf').innerHTML = document.querySelector('#lf').innerHTML.replace("Hello", "Bonjour");
+            document.querySelector('#lf').innerHTML = document.querySelector('#lf').innerHTML.replace("my name is", "je m'appelle");
+        }
+        else
+        {
+           localStorage.setItem('langue', 'en');
+            document.querySelector('#lf').innerHTML = document.querySelector('#lf').innerHTML.replace("Bonjour", "Hello");
+            document.querySelector('#lf').innerHTML = document.querySelector('#lf').innerHTML.replace("je m'appelle", "my name is"); 
+        }
+        function o(t)
+        {
+            return document.querySelector(t);
+        }
+        setInterval(function ()
+        {
+            nombre = o('#texte').value;
+            localStorage.setItem('nombre', nombre)
+        }, 10)
+        o('#texte').value = localStorage.getItem('nombre');
+        o('#noir').onclick = function ()
+        {
+            o('#style').href = "noir.css"
+            localStorage.setItem('theme', 'noir')
+        }
+        o('#blanc').onclick = function ()
+        {
+            o('#style').href = "blanc.css"
+            localStorage.setItem('theme', 'blanc')
+        }
+        document.querySelector('#en').addEventListener('click', function ()
+        {
+            localStorage.setItem('langue', 'en');
+            document.querySelector('#lf').innerHTML = document.querySelector('#lf').innerHTML.replace("Bonjour", "Hello");
+            document.querySelector('#lf').innerHTML = document.querySelector('#lf').innerHTML.replace("je m'appelle", "my name is");
+        })
+        document.querySelector('#fr').addEventListener('click', function ()
+        {
+            localStorage.setItem('langue', 'fr');
+            document.querySelector('#lf').innerHTML = document.querySelector('#lf').innerHTML.replace("Hello", "Bonjour");
+            document.querySelector('#lf').innerHTML = document.querySelector('#lf').innerHTML.replace("my name is", "je m'appelle");
+        })
+    </script>
+</body>
+
+</html>
